@@ -71,6 +71,56 @@
                   <td>要素「name = your-name」に「テストユーザー」を入力</td>
                   <td class="srcInfo">driver.findElement(By.name("your-name")).sendKeys(name);</td>
                 </tr>
+                                                                                                <tr data-tt-id="3"  data-method-key="com.tridentqa.webdriver.pages.ContactPage.setMail-String" class="successLine">
+                  <td>問い合わせページ</td>
+                  <td>メールアドレスに「***@***.com」をセットする</td>
+                  <td class="srcInfo">contact.setMail("***@***.com");</td>
+                </tr>
+                                                                                                <tr data-tt-id="3_0" data-tt-parent-id=3 data-method-key="org.openqa.selenium.WebElement.sendKeys" class="successLine">
+                  <td>-</td>
+                  <td>要素「name = your-email」に「***@***.com」を入力</td>
+                  <td class="srcInfo">driver.findElement(By.name("your-email")).sendKeys(email);</td>
+                </tr>
+                                                                                                <tr data-tt-id="4"  data-method-key="com.tridentqa.webdriver.pages.ContactPage.setOrganization-String" class="successLine">
+                  <td>問い合わせページ</td>
+                  <td>組織に「TRIDENT」をセットする</td>
+                  <td class="srcInfo">contact.setOrganization("TRIDENT");</td>
+                </tr>
+                                                                                                <tr data-tt-id="4_0" data-tt-parent-id=4 data-method-key="org.openqa.selenium.WebElement.sendKeys" class="successLine">
+                  <td>-</td>
+                  <td>要素「name = your-organization」に「TRIDENT」を入力</td>
+                  <td class="srcInfo">driver.findElement(By.name("your-organization")).sendKeys(organization);</td>
+                </tr>
+                                                                                                <tr data-tt-id="5"  data-method-key="com.tridentqa.webdriver.pages.ContactPage.setSubject-String" class="successLine">
+                  <td>問い合わせページ</td>
+                  <td>件名に「テスト」をセットする</td>
+                  <td class="srcInfo">contact.setSubject("テスト");</td>
+                </tr>
+                                                                                                <tr data-tt-id="5_0" data-tt-parent-id=5 data-method-key="org.openqa.selenium.WebElement.sendKeys" class="successLine">
+                  <td>-</td>
+                  <td>要素「name = your-subject」に「テスト」を入力</td>
+                  <td class="srcInfo">driver.findElement(By.name("your-subject")).sendKeys(subject);</td>
+                </tr>
+                                                                                                <tr data-tt-id="6"  data-method-key="com.tridentqa.webdriver.pages.ContactPage.setMessage-String" class="successLine">
+                  <td>問い合わせページ</td>
+                  <td>問い合わせ内容に「テスト送信です」をセットする</td>
+                  <td class="srcInfo">contact.setMessage("テスト送信です");</td>
+                </tr>
+                                                                                                <tr data-tt-id="6_0" data-tt-parent-id=6 data-method-key="org.openqa.selenium.WebElement.sendKeys" class="successLine">
+                  <td>-</td>
+                  <td>要素「name = your-message」に「テスト送信です」を入力</td>
+                  <td class="srcInfo">driver.findElement(By.name("your-message")).sendKeys(message);</td>
+                </tr>
+                                                                                                <tr data-tt-id="7"  data-method-key="com.tridentqa.webdriver.pages.ContactPage.send-void" class="successLine">
+                  <td>問い合わせページ</td>
+                  <td>問い合わせを送信する</td>
+                  <td class="srcInfo">contact.send();</td>
+                </tr>
+                                                                                                <tr data-tt-id="7_0" data-tt-parent-id=7 data-method-key="org.openqa.selenium.WebElement.click" class="successLine">
+                  <td>-</td>
+                  <td>要素「css = input.wpcf7-submit」をクリック</td>
+                  <td class="srcInfo">driver.findElement(By.cssSelector("input.wpcf7-submit")).click();</td>
+                </tr>
                               </tbody>
             </table>
           </div>
@@ -97,6 +147,31 @@
               <img src="../../captures/com.tridentqa.webdriver.appium.AndroidBrowserTest/問い合わせが成功すること/002.png" />
             </div>
           </li>
+                    <li>
+            <div data-tt-id="3" data-image-width="720" data-image-height="1280" class="scrollContainer">
+              <img src="../../captures/com.tridentqa.webdriver.appium.AndroidBrowserTest/問い合わせが成功すること/003.png" />
+            </div>
+          </li>
+                    <li>
+            <div data-tt-id="4" data-image-width="720" data-image-height="1280" class="scrollContainer">
+              <img src="../../captures/com.tridentqa.webdriver.appium.AndroidBrowserTest/問い合わせが成功すること/004.png" />
+            </div>
+          </li>
+                    <li>
+            <div data-tt-id="5" data-image-width="720" data-image-height="1280" class="scrollContainer">
+              <img src="../../captures/com.tridentqa.webdriver.appium.AndroidBrowserTest/問い合わせが成功すること/005.png" />
+            </div>
+          </li>
+                    <li>
+            <div data-tt-id="6" data-image-width="720" data-image-height="1280" class="scrollContainer">
+              <img src="../../captures/com.tridentqa.webdriver.appium.AndroidBrowserTest/問い合わせが成功すること/006.png" />
+            </div>
+          </li>
+                    <li>
+            <div data-tt-id="7" data-image-width="720" data-image-height="1280" class="scrollContainer">
+              <img src="../../captures/com.tridentqa.webdriver.appium.AndroidBrowserTest/問い合わせが成功すること/007.png" />
+            </div>
+          </li>
                   </ul>
       </div>
     </div>
@@ -104,6 +179,14 @@
                       <div class="hiddenMethodArgTestDoc" data-tt-id="0">http://www-demo.trident-qa.com/contact/</div>
                                             <div class="hiddenMethodArgTestDoc" data-tt-id="2">テストユーザー</div>
                               <div class="hiddenMethodArgTestDoc" data-tt-id="2_0">テストユーザー</div>
-                  </div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="3">***@***.com</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="3_0">***@***.com</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="4">TRIDENT</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="4_0">TRIDENT</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="5">テスト</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="5_0">テスト</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="6">テスト送信です</div>
+                              <div class="hiddenMethodArgTestDoc" data-tt-id="6_0">テスト送信です</div>
+                                              </div>
   </body>
 </html>

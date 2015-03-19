@@ -44,6 +44,49 @@ rootMethodTable:
         original: contact.setName("テストユーザー");
         type: method
         thisInstance: {original: contact, type: unknown}
+    - endLine: 73
+      startLine: 73
+      code:
+        args:
+        - {original: '"***@***.com"', type: string, value: '***@***.com'}
+        methodKey: com.tridentqa.webdriver.pages.ContactPage.setMail-String
+        original: contact.setMail("***@***.com");
+        type: method
+        thisInstance: {original: contact, type: unknown}
+    - endLine: 74
+      startLine: 74
+      code:
+        args:
+        - {original: '"TRIDENT"', type: string, value: TRIDENT}
+        methodKey: com.tridentqa.webdriver.pages.ContactPage.setOrganization-String
+        original: contact.setOrganization("TRIDENT");
+        type: method
+        thisInstance: {original: contact, type: unknown}
+    - endLine: 75
+      startLine: 75
+      code:
+        args:
+        - {original: '"テスト"', type: string, value: テスト}
+        methodKey: com.tridentqa.webdriver.pages.ContactPage.setSubject-String
+        original: contact.setSubject("テスト");
+        type: method
+        thisInstance: {original: contact, type: unknown}
+    - endLine: 76
+      startLine: 76
+      code:
+        args:
+        - {original: '"テスト送信です"', type: string, value: テスト送信です}
+        methodKey: com.tridentqa.webdriver.pages.ContactPage.setMessage-String
+        original: contact.setMessage("テスト送信です");
+        type: method
+        thisInstance: {original: contact, type: unknown}
+    - endLine: 77
+      startLine: 77
+      code:
+        methodKey: com.tridentqa.webdriver.pages.ContactPage.send-void
+        original: contact.send();
+        type: method
+        thisInstance: {original: contact, type: unknown}
     key: com.tridentqa.webdriver.appium.AndroidBrowserTest.問い合わせが成功すること-void
   - name: 連絡先の登録が成功すること
     classKey: com.tridentqa.webdriver.appium.AndroidNativeTest
@@ -99,6 +142,46 @@ rootMethodTable:
           original: driver.findElementById("com.example.android.contactmanager:id/contactPhoneEditText")
           type: method
           thisInstance: {original: driver, type: unknown}
+    - endLine: 53
+      startLine: 53
+      code:
+        args:
+        - {original: '"***.com"', type: string, value: '***.com'}
+        methodKey: org.openqa.selenium.WebElement.sendKeys
+        original: driver.findElementById("com.example.android.contactmanager:id/contactEmailEditText").sendKeys("***.com");
+        type: method
+        thisInstance:
+          args:
+          - {original: '"com.example.android.contactmanager:id/contactEmailEditText"',
+            type: string, value: 'com.example.android.contactmanager:id/contactEmailEditText'}
+          methodKey: org.openqa.selenium.remote.RemoteWebDriver.findElementById
+          original: driver.findElementById("com.example.android.contactmanager:id/contactEmailEditText")
+          type: method
+          thisInstance: {original: driver, type: unknown}
+    - endLine: 54
+      startLine: 54
+      code:
+        methodKey: org.openqa.selenium.WebElement.click
+        original: driver.findElementById("com.example.android.contactmanager:id/contactSaveButton").click();
+        type: method
+        thisInstance:
+          args:
+          - {original: '"com.example.android.contactmanager:id/contactSaveButton"',
+            type: string, value: 'com.example.android.contactmanager:id/contactSaveButton'}
+          methodKey: org.openqa.selenium.remote.RemoteWebDriver.findElementById
+          original: driver.findElementById("com.example.android.contactmanager:id/contactSaveButton")
+          type: method
+          thisInstance: {original: driver, type: unknown}
+    - endLine: 55
+      startLine: 55
+      code:
+        args:
+        - {original: ScreenOrientation.LANDSCAPE, type: unknown}
+        methodKey: org.openqa.selenium.Rotatable.rotate
+        childInvoke: true
+        original: driver.rotate(ScreenOrientation.LANDSCAPE);
+        type: method
+        thisInstance: {original: driver, type: unknown}
     key: com.tridentqa.webdriver.appium.AndroidNativeTest.連絡先の登録が成功すること-void
   - name: 計算処理が正しく行われること
     classKey: com.tridentqa.webdriver.appium.IOSNativeTest
